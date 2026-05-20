@@ -1,8 +1,8 @@
 """
-Powerhouse Core - Exact Probabilistic Closure Engine
+power_house Core - Exact Probabilistic Closure Engine
 
 This is a mathematically identical reimplementation of the original
-MFENX Powerhouse engine (engine/src/model.rs + solve.rs).
+MFENX power_house engine (engine/src/model.rs + solve.rs).
 
 It enables rigorous, explainable verification at effectively unlimited
 scale (sextillion / 10^21+ entities) using only a tiny number of rounds
@@ -124,7 +124,7 @@ def explain(result: ClosureResult) -> str:
 def demo_sextillion_scale() -> None:
     """Impressive demonstration of sextillion-scale verification."""
     print("=" * 72)
-    print("POWERHOUSE DEMO — Sextillion-Scale Verification (Now Possible)")
+    print("power_house DEMO — Sextillion-Scale Verification (Now Possible)")
     print("=" * 72)
     print("\nUse case: Verify a critical property across a system with ~10²¹ entities")
     print("(molecular respiratory models, massive datasets, distributed verification, etc.)\n")
@@ -144,7 +144,7 @@ def demo_sextillion_scale() -> None:
     print(f"\n→ For 99.9999% certainty you need only ~{r_needed} rounds.")
 
     print("\nThis level of rigorous verification at this scale was previously impossible")
-    print("without supercomputers. Powerhouse makes it exact, fast, and accessible.")
+    print("without supercomputers. power_house makes it exact, fast, and accessible.")
     print("=" * 72)
 
 
