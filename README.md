@@ -1,12 +1,12 @@
 power_house-verifier
 
-**The official Python implementation of Powerhouse** — the probabilistic closure engine that makes rigorous, explainable verification at **sextillion (10²¹) scale** possible on ordinary laptops and edge devices.
+**The official Python implementation of power_house** — the probabilistic closure engine that makes rigorous, explainable verification at **sextillion (10²¹) scale** possible on ordinary laptops and edge devices.
 
 ## What This Is
 
-Before Powerhouse, verifying anything at true molecular or planetary scale required supercomputers or heavy approximations with no easy way to quantify certainty.
+Before power_house, verifying anything at true molecular or planetary scale required supercomputers or heavy approximations with no easy way to quantify certainty.
 
-**Powerhouse** solves this with beautiful closed-form mathematics. It models verification as a multi-round statistical closure process and computes the **exact probability** that the process has finalized — even when the underlying system contains sextillions of entities.
+**power_house** solves this with beautiful closed-form mathematics. It models verification as a multi-round statistical closure process and computes the **exact probability** that the process has finalized — even when the underlying system contains sextillions of entities.
 
 This repository contains the clean, tested, and ready-to-use Python reference implementation.
 
@@ -37,7 +37,7 @@ All functions are pure, deterministic, and extremely fast.
 
 This is living, runnable proof that **sextillion-scale rigorous verification is now practical**.
 
-When researchers, developers, and investors see this repository, they immediately understand the power of the underlying Powerhouse technology.
+When researchers, developers, and investors see this repository, they immediately understand the power of the underlying power_house technology.
 
 It serves as the foundation for:
 - Respiratory & biomedical simulation platforms
@@ -77,10 +77,10 @@ Run the demo or the test suite yourself.
 
 ## License
 
-MIT License — use it freely to build on top of Powerhouse.
+MIT License — use it freely to build on top of power_house.
 
 ---
 
 **This was impossible yesterday. Today it exists. Tomorrow the world changes.**
 
-Built directly on the original MFENX Powerhouse engine.
+Built directly on the original MFENX power_house engine.
