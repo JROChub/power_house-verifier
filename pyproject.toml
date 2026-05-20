@@ -1,1 +1,27 @@
-Full pyproject.toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "power-house-verifier"
+version = "2.0.0"
+description = "High-scale probabilistic verification engine using log-space arithmetic"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{ name = "MFENX" }]
+keywords = ["verification", "probabilistic", "log-space", "high-scale", "power_house"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+power_house-verifier = "power_house_verifier.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["power_house_verifier"]
