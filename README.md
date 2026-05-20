@@ -1,1 +1,0 @@
-Full README content from high-scale version
