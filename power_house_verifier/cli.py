@@ -1,1 +1,1 @@
-Full updated cli.py with scaling command
+Updated cli.py with adversarial command
