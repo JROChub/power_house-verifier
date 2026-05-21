@@ -1,1 +1,1 @@
-Full final robust version with proper uncertainty modeling and baseline comparison
+Full final polished version with proper statistical modeling and baseline comparison
