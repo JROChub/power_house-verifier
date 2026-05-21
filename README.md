@@ -2,6 +2,30 @@
 
 **High-scale probabilistic verification with compounding efficiency**
 
+## Quick Start
+
+### Using Docker (Recommended)
+
+```bash
+git clone https://github.com/JROChub/power_house-verifier.git
+cd power_house-verifier
+docker build -t power-house-verifier .
+docker run --rm power-house-verifier
+```
+
+This runs the flagship real-data demo immediately with no additional setup.
+
+### Using Python Directly
+
+```bash
+git clone https://github.com/JROChub/power_house-verifier.git
+cd power_house-verifier
+pip install -e .
+python examples/compound_verification_demo.py
+```
+
+Both methods run the professional demo showing rigorous verification on real measurement data with baseline comparison.
+
 ## Vision and Contribution
 
 This work introduces and implements a computationally efficient method for rigorous probabilistic verification at scales that have historically been intractable. By modeling verification as a compounding process and performing all calculations in log-space, the approach enables exact probability computations over extremely large effective state spaces while remaining practical on ordinary hardware.
