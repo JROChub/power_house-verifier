@@ -1,1 +1,1 @@
-Full final polished version with proper statistical modeling and baseline comparison
+Final polished version with no-argument real data support and baseline comparison
