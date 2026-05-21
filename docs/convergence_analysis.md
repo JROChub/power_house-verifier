@@ -1,0 +1,1 @@
+Full convergence analysis document with theorems and discussion
