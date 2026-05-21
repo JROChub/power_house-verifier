@@ -1,1 +1,1 @@
-Final polished version with no-argument real data support and baseline comparison
+Final polished version with improved visual output and narrative
