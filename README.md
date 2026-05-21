@@ -29,6 +29,29 @@ Key operations:
 
 All calculations are deterministic and numerically stable even at extreme scales.
 
+## Assumptions, Bounds, and Limitations
+
+The method implemented in this package rests on several modeling assumptions:
+
+- **Independence**: Individual checks within and across rounds are assumed to be statistically independent. Violations of this assumption (e.g., correlated sensor failures or systematic biases) can degrade the accuracy of the computed probabilities.
+- **Parameter Accuracy**: The input parameters \(p\) (base success probability) and \(q\) (quality factor) must be reasonably well-estimated from domain knowledge or data. Significant misestimation directly affects the reliability of the output probabilities.
+- **Stationarity**: The underlying success probabilities are assumed to be constant across rounds unless explicitly modified by the user.
+
+### Known Bounds and Behavior
+
+- The verification probability is monotonically non-decreasing in the number of rounds \(r\) and checks per round \(k\).
+- In the limit of large \(r\) or strong per-round success probability, the verification probability converges to 1.
+- The expected number of rounds is bounded above by the maximum allowed rounds \(r\).
+- Log-space evaluation ensures numerical stability for very small per-round success probabilities; however, floating-point precision limits still apply in extreme regimes.
+
+### Limitations
+
+- The current formulation does not natively support dependent or hierarchical check structures.
+- It is not a substitute for formal verification methods in safety-critical systems where absolute guarantees are required.
+- Performance and accuracy in very low base-probability regimes (\(p \ll 0.5\)) or under strong correlation remain areas of active refinement.
+
+Users are encouraged to apply the included adversarial analysis tools to assess sensitivity to these assumptions in their specific application domain.
+
 ## Features
 
 - Log-space arithmetic for extreme numerical stability
