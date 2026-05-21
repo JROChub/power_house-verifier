@@ -1,1 +1,1 @@
-Full improved robust real-data version of compound_verification_demo.py
+Full final robust version with proper uncertainty modeling and baseline comparison
