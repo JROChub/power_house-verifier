@@ -35,13 +35,21 @@ All calculations are deterministic and numerically stable even at extreme scales
 - JSON output for integration and tooling
 - Comprehensive test suite
 
-## Usage
+## Real Data Demo (Flagship Example)
+
+`examples/compound_verification_demo.py` demonstrates the core capability on **real-world data**:
 
 ```bash
-power_house-verifier scaling --scenario general
-power_house-verifier verify --scenario pollution --output json
-power_house-verifier adversarial --scenario general
+python examples/compound_verification_demo.py --data path/to/real_air_quality.csv --scale region
 ```
+
+The script:
+- Loads real sensor/measurement data (CSV)
+- Groups measurements by scale (city → region → larger area)
+- Runs verification treating real values + uncertainty as probabilistic checks
+- Shows how verification probability compounds across real scales
+
+This is the concrete demonstration that rigorous, high-confidence verification of large-scale real systems is now practical on ordinary hardware.
 
 ## Performance
 
@@ -57,7 +65,7 @@ Large                 0.651          0.168             4.210
 High-Precision        1.240          0.195             5.890
 ```
 
-See `benchmarks/run_benchmarks.py` and `benchmarks/results.txt` for methodology and reproduction instructions. Even at the largest tested scale, verification completes in well under one millisecond on consumer hardware.
+See `benchmarks/run_benchmarks.py` and `benchmarks/results.txt` for methodology and reproduction instructions.
 
 ## Robustness & Adversarial Testing
 
