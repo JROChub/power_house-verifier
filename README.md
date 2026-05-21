@@ -2,15 +2,19 @@
 
 **High-scale probabilistic verification with compounding efficiency**
 
-A numerically stable implementation of probabilistic closure for verification at extreme scales. Small per-round probabilistic effort can compound into verification of massive systems when the protocol is structured correctly.
+## Vision and Contribution
 
-## Core Insight
+This work introduces and implements a computationally efficient method for rigorous probabilistic verification at scales that have historically been intractable. By modeling verification as a compounding process and performing all calculations in log-space, the approach enables exact probability computations over extremely large effective state spaces while remaining practical on ordinary hardware.
 
-Massive systems may be verifiable with tiny probabilistic effort if verification compounds correctly.
+The central contribution is a demonstration that verification cost need not scale linearly with system size when the verification protocol is structured to exploit compounding. This property has direct implications for any domain in which high-confidence assessment of large, complex systems is required, including environmental monitoring, distributed infrastructure, scientific simulation, and multi-agent or multi-planetary systems.
 
-This is not merely an optimization. It is a different way of thinking about scaling verification: instead of linear growth in effort with system size, properly designed compounding allows verification cost to remain small even as the underlying system grows to planetary or sextillion scale.
+## Significance
 
-This idea has the potential to reshape how people think about what is computationally feasible in verification, consensus, and large-scale systems.
+Traditional approaches to large-scale verification have generally relied on either exhaustive enumeration, heavy Monte Carlo sampling, or substantial approximation. Each of these strategies imposes significant computational cost or sacrifices rigor, particularly in the tails of the distribution and under adversarial conditions.
+
+The method presented here offers an alternative formulation in which verification probability compounds across independent checks and rounds. When properly parameterized, this compounding behavior allows strong probabilistic guarantees to be obtained with relatively modest per-round effort, even as the underlying system grows to planetary or greater scale. The approach is deterministic, numerically stable, and admits direct adversarial analysis.
+
+While the current implementation focuses on a specific class of verification problems, the underlying primitive is general. It provides a foundation for future work on verifiable large-scale systems.
 
 ## Mathematical Foundation
 
