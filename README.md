@@ -35,21 +35,21 @@ All calculations are deterministic and numerically stable even at extreme scales
 - JSON output for integration and tooling
 - Comprehensive test suite
 
-## Real Data Demo (Flagship Example)
+## Real Data Demo (Primary Example)
 
-`examples/compound_verification_demo.py` demonstrates the core capability on **real-world data**:
+`examples/compound_verification_demo.py` is the flagship demonstration. It runs **rigorous verification on real measurement data**:
 
 ```bash
-python examples/compound_verification_demo.py --data path/to/real_air_quality.csv --scale region
+python examples/compound_verification_demo.py --data path/to/real_data.csv --group region
 ```
 
 The script:
-- Loads real sensor/measurement data (CSV)
-- Groups measurements by scale (city → region → larger area)
-- Runs verification treating real values + uncertainty as probabilistic checks
-- Shows how verification probability compounds across real scales
+- Loads and validates real CSV data (measurements + uncertainty)
+- Groups data by scale (e.g. city → region)
+- Runs verification treating real values as probabilistic checks
+- Demonstrates how verification probability compounds across real scales
 
-This is the concrete demonstration that rigorous, high-confidence verification of large-scale real systems is now practical on ordinary hardware.
+This is currently the clearest way to experience the core breakthrough: high-confidence verification of real large-scale systems is now practical on ordinary hardware.
 
 ## Performance
 
